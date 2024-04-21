@@ -1,0 +1,228 @@
+/*
+|======================================
+|
+|      programming  : Adel Mahmoud
+|      phone number : +201018646196
+|   
+|======================================
+*/
+/* 'Open Sans' font from Google Fonts */
+*{ 
+  font-family: 'Noto Kufi Arabic', sans-serif;
+}
+body {
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+.loading{
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#fff;
+  z-index: 10000;
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-right: 16px solid #3498db;
+  border-bottom: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Barcode */
+#barcode{
+  box-shadow: 0 0 20px rgba(0,139,253,0.25);
+  width: 300px;
+  margin: 30px 0px 30px 0px;
+  background:#fff;
+}
+.sales-search{
+	position: relative;
+	display: flex;
+  height: 70px;
+}
+.sales-search span{
+	position: absolute;
+	left: 20px;
+	top: 30%;
+}
+.sales-search input{
+	border-radius: 3px 0 0 3px;
+}
+.sales-search button {
+	border-radius: 0 3px 3px 0 !important;
+	width: 100px;
+}
+@media (max-width:769px){
+  #searchDate{
+    visibility: hidden;
+  }
+}
+
+.checkActive{
+  position: relative;
+  
+}
+
+.checkActive input[type=checkbox]{
+  width: 30px;
+  height: 30px;
+}
+
+
+.container-home{
+  height: 200px;
+  padding:0 7px!important;
+}
+a{
+  text-decoration: none !important;
+}
+a:hover{
+  text-decoration: none !important;
+}
+.login {
+  width: 100%;
+  /*width: 350px;
+  margin: 16px auto;*/
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.login-header {
+  background: #28d;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login select{
+  height:50px;
+}
+.login input:focus {
+  border-color: #888;
+}
+
+.login input[type="submit"] {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+.login input[type="submit"]:focus {
+  border-color: #05a;
+}
+
+input:-moz-placeholder {
+  text-align: right;
+}
+
+input:-ms-input-placeholder {
+  text-align: right;
+}
+
+input::-webkit-input-placeholder {
+  text-align: right;
+}
+@media(max-width:600px){
+  footer{
+    position: relative;
+  }
+}
+@media(min-width:601px){
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+}
+footer{
+  background: rgb(17,21,55);
+  padding:20px 10px;
+}
+.icons-social{
+  text-align: center;
+}
+.icons-social a i{
+  font-size:25px;
+  width:40px;
+  height:40px;
+  color: white;
+  border-radius:50%;
+  line-height:40px;
+  text-align: center;
+  margin:0 20px;
+  transition:0.5s;
+}
+.icons-social a i:hover{
+  width:42px;
+  height:42px;
+  line-height:42px;
+  box-shadow:0 0 10px #ddd;
+}
+.icons-social .fa-facebook{
+  padding-top: 2px;
+  background-color: #3b5998;
+}
+.icons-social .fa-whatsapp{
+  background-color: rgb(0,210,100);        
+}
+.icons-social .fa-phone{
+  background:#00aaff;
+}

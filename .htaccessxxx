@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>    
+    Options +FollowSymLinks
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} !-f
+    RewriteCond %{REQUEST_URI} !-d
+    RewriteCond %{REQUEST_URI} !-l
+    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+</IfModule>
+RewriteCond %{HTTP_HOST} ^ashraf\.sharara\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.ashraf\.sharara\.org$
+RewriteRule ^/?$ "https\:\/\/ashraf\.sharara\.org\/pages\/login" [R=301,L]
+
