@@ -1,11 +1,4 @@
 <?php
-/*
- const URL_ROOT  = "http://ashraf.sharara.org/"; 
- const DB_HOST   = "localhost";
- const DB_NAME   = "store";
- const DB_USER   = "dijuu32keftw"; 
- const DB_PASS   = "Hellomybro123"; 
- */
  const URL_ROOT       = 'http://localhost:8020/'; // $_SERVER['HTTP_HOST']; 
  const DB_HOST   = "localhost";
  const DB_NAME   = "store";
