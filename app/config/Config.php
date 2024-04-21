@@ -4,5 +4,4 @@
  const DB_NAME   = "store";
  const DB_USER   = "root"; 
  const DB_PASS   = ""; 
-// echo $_SERVER['PHP_HOST'].'_1233';
 ?>
