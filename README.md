@@ -1,6 +1,11 @@
 # Store
 
 A project for managing stores, sales, purchases, and inventory.
+
+### Technology Stack
+The project utilizes HTML, CSS, JavaScript, Bootstrap, and jQuery for frontend development, while the backend is implemented using pure PHP with an MVC framework.
+
+
 ### Project Images
 
 Add Product 
