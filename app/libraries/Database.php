@@ -19,6 +19,7 @@ class Database{
     //Create PDO Instance
     try{
       $this->con = new PDO($dsn, $this->dbUser, $this->dbPass, $options);
+      $this->con->exec("SET NAMES 'utf-8mb4'");
     }catch(PDOException $e){
       $this->error = $e->getMessage();
       echo $this->error;
